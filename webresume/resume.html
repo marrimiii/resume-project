@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="nav">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="container">
+    <div class="box" id="about">
+        <div>
+            <h4 id="welcomeText"></h4>
+            <h1>Mariel Mae Y. Bailio</h1>
+            <p>Address: Wahigan, Pagalungan Cagayan de Oro</p>
+            <p>Phone: 09924127082</p>
+            <p>Email: bailiomarielmae@gmail.com</p>
+            <p id="aboutText">
+                I am a fresh graduate with a Bachelor's degree in Information Technology,
+                passionate about web development and software solutions. I have foundational
+                knowledge in HTML, CSS, JavaScript, and database management, and I enjoy creating
+                simple, functional, and user-friendly applications. I am eager to apply my skills
+                in a professional environment, continuously learn new technologies, and grow as an
+                IT professional. I am a hardworking, adaptable, and detail-oriented individual who
+                is ready to contribute and take on new challenges.
+            </p>
+        </div>
+        <img src="resumepic.png" alt="Profile Photo">
+    </div>
+
+ <div class="box" id="education">
+    <h2>Education</h2>
+
+    <h3>Tertiary Education</h3>
+    <p>Bachelor of Science in Information Technology</p>
+    <p>University of Science and Technology</p>
+    <p>2024 - 2028</p>
+
+    <h3>Senior High School - STEM Strand</h3>
+    <p>Lumbia National High School</p>
+    <p>2022 - 2024</p>
+
+    <h3>Junior High School</h3>
+    <p>Lumbia National High School</p>
+    <p>2018 - 2022</p>
+
+    <h3>Elementary</h3>
+    <p>Baluarte Elementary School</p>
+    <p>2012 - 2018</p>
+</div>
+
+    <div class="box" id="skills">
+        <h2>Skills</h2>
+        <input type="text" id="searchSkill" placeholder="Search skill...">
+
+        <h3>Technical Skills</h3>
+        <ul class="skillList">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Basic jQuery</li>
+            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+        </ul>
+
+        <h3>Soft Skills</h3>
+        <ul class="skillList">
+            <li>Communication Skills</li>
+            <li>Problem-Solving</li>
+        </ul>
+
+        <h3>Other Skills</h3>
+        <ul class="skillList">
+            <li>Basic Graphic Design</li>
+            <li>Multilingual</li>
+        </ul>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="box" id="projects">
+        <h2>Projects</h2>
+
+        <ul>
+            <li><strong>Online Billing System</strong><br>
+                - Developed a system for managing customer billing and payment records.<br>
+                - Improved accuracy and organization of financial data.<br>
+                - Used basic web technologies and database concepts.
+            </li>
+
+            <li><strong>Resume Website</strong><br>
+                - Designed and created a personal resume website.<br>
+                - Showcased profile, skills, education, and projects.<br>
+                - Built using HTML, CSS, and JavaScript.
+            </li>
+
+            <li><strong>Tetris Game Project</strong><br>
+                - Developed a simple interactive Tetris game.<br>
+                - Applied logic building and problem-solving skills.<br>
+                - Implemented basic game mechanics and controls.
+            </li>
+        </ul>
+
+        <ul id="moreProjects" style="display: none;">
+            <li><strong>E-Commerce Website</strong><br>
+                - Developed a web-based platform for product listing and user interaction.<br>
+                - Focused on clean design and user-friendly experience.
+            </li>
+        </ul>
+
+        <button onclick="toggleProjects()" id="viewBtn">View More</button>
+    </div>
+
+    <div class="box" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <textarea id="message" placeholder="Message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formFeedback"></p>
+        <p id="contactNote">Thank you for reaching out!</p>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
